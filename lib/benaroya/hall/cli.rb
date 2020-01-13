@@ -15,7 +15,8 @@ class Benaroya::CLI
     puts ""
     puts "To view upcoming concerts and events, type 'list'."
     puts "To purchase tickets, type 'ticket'."
-    puts "To leave this "
+    puts "To leave this program, type 'exit'."
+  end
 end
 
 
