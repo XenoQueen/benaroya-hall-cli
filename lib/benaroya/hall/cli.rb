@@ -1,6 +1,9 @@
 require "benaroya/hall/cli/version"
 
 class Benaroya::CLI
+  
+  @@all = []
+  
   def call
     Benaroya::Scraper.scrape
     welcome
@@ -17,6 +20,23 @@ class Benaroya::CLI
     puts "To purchase tickets, type 'ticket'."
     puts "To leave this program, type 'exit'."
   end
+  
+  def list_concerts
+    input = gets.strip
+    if input == "list"
+      puts ""
+      concerts = Benaroya::Concert.all
+      concerts.each.with_index(1) {|concert, index| puts "#{index}. #{concert.name}"}
+    elsif input == "exit"
+      @@all.clear
+    else 
+      puts "To leave this program, type 'exit'."
+      puts "To view upcoming concerts and events, type 'list'."
+      list_concerts
+    end
+  end
+  
+  
 end
 
 
