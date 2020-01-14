@@ -9,15 +9,11 @@ class Benaroya::CLI
     welcome
     menu
     list_concerts
-    buy_tickets
   end
   
   def welcome
-    puts ""
     puts "Welcome to Benaroya Hall, home of the Seattle Symphony!"
-    puts ""
     puts "To view upcoming concerts and events, type 'list'."
-    puts "To purchase tickets, type 'ticket'."
     puts "To leave this program, type 'exit'."
   end
   
