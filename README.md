@@ -1,8 +1,10 @@
 # Benaroya::Hall::Cli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/benaroya/hall/cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+CLI application that provides a list of current and upcoming concerts and events at Benaroya Hall.
 
-TODO: Delete this and the text above, and describe your gem
+- Shows welcome message, then waits for input.
+- Typing "list" displays list of concerts.
+- Typing "exit" displays farewell message and closes the application.
 
 ## Installation
 
