@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "benaroya/hall/cli"
+require "benaroya_hall"
 
 BenaroyaHall::CLI::new.call
+
 require "irb"
 IRB.start(__FILE__)
