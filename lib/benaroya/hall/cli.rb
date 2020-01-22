@@ -3,8 +3,6 @@ require "benaroya/hall/cli/version"
 
 class Benaroya::CLI
   
-  @@all = []
-  
   def call
     Benaroya::Scraper.scrape
     welcome
@@ -13,9 +11,9 @@ class Benaroya::CLI
   end
   
   def welcome
-    puts "Welcome to Benaroya Hall, home of the Seattle Symphony!"
-    puts "To view upcoming concerts and events, type 'list'."
-    puts "To leave this program, type 'exit'."
+    puts "Welcome to Benaroya Hall, home of the Seattle Symphony!".blue.bold
+    puts "To view upcoming concerts and events, type 'list'.".bold
+    puts "To leave this program, type 'exit'.".red.bold
   end
   
   def list_concerts
