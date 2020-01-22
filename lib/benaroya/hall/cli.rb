@@ -12,7 +12,7 @@ class Benaroya::CLI
   
   def welcome
     puts "Welcome to Benaroya Hall, home of the Seattle Symphony!".blue.bold
-    puts "To view upcoming concerts and events, type 'list'.".bold
+    puts "To view upcoming concerts and events, type 'list'.".green.bold
     puts "To leave this program, type 'exit'.".red.bold
   end
   
