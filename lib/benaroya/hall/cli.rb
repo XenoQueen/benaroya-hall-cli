@@ -1,3 +1,4 @@
+require 'colorize'
 require "benaroya/hall/cli/version"
 
 class Benaroya::CLI
