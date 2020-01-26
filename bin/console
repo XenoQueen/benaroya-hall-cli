@@ -2,8 +2,5 @@
 
 require "bundler/setup"
 require "benaroya_hall"
-
-BenaroyaHall::CLI::new.call
-
 require "irb"
-IRB.start(__FILE__)
+IRB.start

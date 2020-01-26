@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './lib/benaroya_hall'
+require relative '../lib/benaroya_hall'
 
 BenaroyaHall::CLI::new.call
